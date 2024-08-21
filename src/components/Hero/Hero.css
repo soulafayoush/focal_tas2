@@ -1,0 +1,120 @@
+.hero {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px; 
+    background-color: white;
+}
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 20px; 
+    z-index: 3; 
+    
+}
+
+
+.hero-content {
+    color: white;
+    text-align: left;
+    max-width: 350px; 
+}
+
+.hero-content h1 {
+    font-size: 3rem; 
+    line-height: 1.2; 
+    text-align: left; 
+    margin-bottom: 20px;
+    margin-left: 90px;
+    white-space: pre-line; 
+
+}
+
+.hero-content h1 br {
+    display: block; 
+}
+
+.hero-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    border: none;
+    font-size: 1.5rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 90px;
+}
+
+.hero-button span{
+color: #e69500;
+}
+
+.hero-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+}
+
+.hero-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;  
+    height: 98%;  
+    object-fit: cover;
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease-in-out; */
+    z-index: 1;
+    margin: 0 1%; 
+ 
+}
+
+.hero-slider img.active {
+    opacity: 1;
+    z-index: 2; 
+}
+
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    display: flex;
+    gap: 10px;
+    z-index: 4;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: darkorange;
+}

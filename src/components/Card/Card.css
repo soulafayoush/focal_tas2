@@ -1,0 +1,17 @@
+.text-container {
+    text-align: center;
+  top: -400%;
+  padding: 50px 50px;
+}
+
+.text-container span {
+    color: #ff5722;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.text-container h3 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: #333;
+}

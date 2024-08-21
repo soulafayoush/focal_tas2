@@ -1,0 +1,95 @@
+.banner {
+    position: relative;
+    background-image: url('/images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* تأثير شفاف فوق الصورة */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.5rem;
+}
+
+.bottom-image-container {
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-image {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: -20px; /* لضمان تواجد النص فوق الصورة */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.overlay-text h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.overlay-text p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+.stats-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.stat-box {
+    text-align: center;
+    color: white;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stat-box p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
